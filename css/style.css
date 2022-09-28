@@ -1,0 +1,56 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+main {
+  height: calc(100vh - 80px);
+  overflow: auto;
+}
+
+footer {
+  background-color: rgb(40, 40, 40);
+  height: 80px;
+}
+
+.flex {
+  display: flex;
+}
+
+.lateral-menu {
+  width: 200px;
+  background-color: black;
+}
+
+.premium-banner {
+  height: 90px;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.548);
+  position: fixed;
+}
+
+.container {
+  width: calc(100vw - 200px);
+  position: relative;
+  background-color: rgb(20, 25, 34);
+}
+
+.content {
+  padding-top: 90px;
+}
+
+
+/**********************************************************
+        RESPONSIVE
+**********************************************************/
+@media screen and (max-width: 550px) {
+  .lateral-menu {
+    width: 40px;
+  }
+
+  .container {
+    width: calc(100vw - 40px);
+  }
+
+}
