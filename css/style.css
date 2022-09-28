@@ -83,6 +83,7 @@ footer {
   padding-left: 15px;
   padding-right: 15px;
   height: 100%;
+  width: 100%;
 }
 
 header .bottone a{
@@ -143,10 +144,6 @@ header .bottone a{
 @media screen and (max-width: 480px) {
   .lateral-menu {
     width: 40px;
-  }
-
-  .wh-lateral-menu {
-    width: calc(100% - 40px);
   }
 
 }
