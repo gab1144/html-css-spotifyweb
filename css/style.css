@@ -138,16 +138,52 @@ header .bottone a{
   margin-bottom: 20px;
 }
 
+footer > div {
+  height: 100%;
+}
+
+footer .song {
+  width: 200px;
+  background-color: green;
+  flex-shrink: 0;
+}
+
+footer .song-control {
+  width: 460px;
+  background-color: red;
+}
+
+footer .song-control > div{
+  height: 50%;
+}
+
+.start-stop {
+  width: 180px;
+  background-color: gold;
+  margin: 0 auto;
+}
+
+.bar {
+  width: 100%;
+  background-color: powderblue;
+}
+
+footer .general-control {
+  width: 200px;
+  background-color: purple;
+  flex-shrink: 0;
+}
+
+
 /**********************************************************
         RESPONSIVE
 **********************************************************/
-@media screen and (max-width: 480px) {
-  .lateral-menu {
-    width: 40px;
-  }
-
-  .wh-lateral-menu {
-    width: calc(100% - 40px);
+@media screen and (max-width: 1300px) {
+  .col {
+    width: calc(calc(100%/4) - 3%);
+    height: 300px;
+    background-color: cyan;
+    margin-bottom: 20px;
   }
 
 }
@@ -160,4 +196,22 @@ header .bottone a{
     margin-bottom: 20px;
   }
 
+  footer .song {
+    width: 150px;
+  }
+
+  footer .general-control {
+    width: 150px;
+  }
+
+}
+
+@media screen and (max-width: 480px) {
+  .lateral-menu {
+    width: 40px;
+  }
+
+  .wh-lateral-menu {
+    width: calc(100% - 40px);
+  }
 }
