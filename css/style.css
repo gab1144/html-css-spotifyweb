@@ -146,6 +146,10 @@ header .bottone a{
     width: 40px;
   }
 
+  .wh-lateral-menu {
+    width: calc(100% - 40px);
+  }
+
 }
 
 @media screen and (max-width: 760px) {
