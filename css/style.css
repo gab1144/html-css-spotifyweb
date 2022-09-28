@@ -64,7 +64,7 @@ footer {
 .bottone {
   width: fit-content;
   height: fit-content;
-  padding: 15px 40px;
+  padding: 10px 40px;
   background-color: black;
   border-radius: 30px;
   border: 1px solid white;
@@ -88,6 +88,7 @@ footer {
 
 header .bottone a{
   text-transform: uppercase;
+  font-size: 12px;
 }
 
 .lateral-menu {
