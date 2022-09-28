@@ -23,6 +23,7 @@ header {
 main {
   height: calc(100vh - 80px);
   overflow: auto;
+  padding-top: 105px;
 }
 
 footer {
@@ -33,6 +34,10 @@ footer {
 /***********************************************************************/
 .flex {
   display: flex;
+}
+
+.dir-col {
+  flex-direction: column;
 }
 
 .wrap {
@@ -52,7 +57,7 @@ footer {
 }
 
 .wh-lateral-menu {
-  width: calc(100vw - 200px);
+  width: calc(100% - 200px);
 }
 
 /***********************************************************************/
@@ -74,6 +79,12 @@ footer {
   text-decoration: underline;
 }
 
+.container {
+  padding-left: 15px;
+  padding-right: 15px;
+  height: 100%;
+}
+
 header .bottone a{
   text-transform: uppercase;
 }
@@ -82,16 +93,25 @@ header .bottone a{
   width: 200px;
   height: calc(100vh - 80px);
   background-color: black;
-  position: fixed;
-  top: 0;
-  left: 0;
+  float: left;
+  overflow: auto;
 }
 
-.container {
-  padding: 15px;
-  padding-top: 105px;
-  padding-bottom: 0;
+.lateral-menu .container {
   height: 100%;
+}
+
+.lateral-menu .logo {
+  padding: 15px 0;
+}
+
+.lateral-menu ul{
+  list-style: none;
+  margin-bottom: 25px;
+}
+
+.lateral-menu ul li{
+  margin-bottom: 20px;
 }
 
 .sezioni{
@@ -120,13 +140,23 @@ header .bottone a{
 /**********************************************************
         RESPONSIVE
 **********************************************************/
-@media screen and (max-width: 550px) {
+@media screen and (max-width: 480px) {
   .lateral-menu {
     width: 40px;
   }
 
   .wh-lateral-menu {
-    width: calc(100vw - 40px);
+    width: calc(100% - 40px);
+  }
+
+}
+
+@media screen and (max-width: 760px) {
+  .col {
+    width: calc(calc(100%/2) - 3%);
+    height: 300px;
+    background-color: cyan;
+    margin-bottom: 20px;
   }
 
 }
