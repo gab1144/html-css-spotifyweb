@@ -11,7 +11,7 @@ body {
 }
 
 header {
-  height: 90px;
+  height: 80px;
   position: fixed;
   right: 0;
   top: 0;
@@ -23,7 +23,6 @@ header {
 main {
   height: calc(100vh - 80px);
   overflow: auto;
-  padding-top: 105px;
 }
 
 footer {
@@ -50,6 +49,10 @@ footer {
 
 .jus-spc-btw {
   justify-content: space-between;
+}
+
+.jus-c {
+  justify-content: center;
 }
 
 .align-c {
@@ -85,7 +88,6 @@ footer {
   height: 100%;
   width: 100%;
 }
-
 header .bottone a{
   text-transform: uppercase;
   font-size: 12px;
@@ -96,7 +98,6 @@ header .bottone a{
   height: calc(100vh - 80px);
   background-color: black;
   float: left;
-  overflow: auto;
 }
 
 .lateral-menu .container {
@@ -104,26 +105,51 @@ header .bottone a{
 }
 
 .lateral-menu .logo {
-  padding: 15px 0;
+  height: 80px;
 }
 
-.lateral-menu ul{
+.lateral-menu .logo img {
+  height: 35px;
+}
+
+.lateral-menu .logo img[alt="Logo"] {
+  display: none;
+}
+
+.lateral-menu ul {
   list-style: none;
   margin-bottom: 25px;
 }
 
-.lateral-menu ul li{
+.lateral-menu ul li {
   margin-bottom: 20px;
 }
 
-.sezioni{
-  width: 100%;
-  height: 50px;
-  background-color: blue;
+main .container {
+  padding-top: 95px;
 }
 
-.content {
-  margin-top: 30px;
+.playlist {
+  overflow: auto;
+}
+
+.sezioni ul {
+  list-style: none;
+  display: flex;
+}
+
+.sezioni ul li {
+  margin-right: 15px;
+  flex-shrink: 0;
+  margin-bottom: 30px;
+}
+
+.sezioni ul li a {
+  font-size: 13px;
+  color: white;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
 }
 
 .row {
@@ -212,7 +238,21 @@ footer .general-control {
     width: 40px;
   }
 
+  .lateral-menu .container{
+    padding-left: 6px;
+    padding-right: 6px;
+  }
+
   .wh-lateral-menu {
     width: calc(100% - 40px);
+  }
+
+  .lateral-menu .logo img[alt="Logo"] {
+    display: block;
+    width: 28px;
+  }
+
+  .lateral-menu .logo img[alt="Logo Spotify"] {
+    display: none;
   }
 }
