@@ -8,6 +8,7 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: white;
   background-color: rgb(20, 25, 34);
+  overflow: hidden;
 }
 
 header {
@@ -104,10 +105,6 @@ header .bottone a{
   float: left;
 }
 
-.lateral-menu .container {
-  height: 100%;
-}
-
 .lateral-menu .logo {
   height: 80px;
 }
@@ -126,29 +123,29 @@ header .bottone a{
 
 .lateral-menu ul {
   list-style: none;
-  margin-bottom: 25px;
 }
 
 .lateral-menu ul li {
   margin-bottom: 20px;
 }
 
-.lateral-menu-bottom {
-}
-
-
 .lateral-menu-bottom img {
   width: 20px;
+  margin-right: 5px;
 }
 
 .lateral-menu-bottom .download {
   border-bottom: 1px solid grey;
-  padding-bottom: 10px;
 }
 
-.lateral-menu-bottom .account {
-  margin-top: 10px;
+.lateral-menu-bottom .account, .lateral-menu-bottom .download {
+  height: 30px;
+  display: flex;
+  align-items: center;
+}
 
+.lateral-menu-bottom .account span, .lateral-menu-bottom .download span{
+  display: block;
 }
 
 .lateral-menu-bottom img[alt="Profile"] {
@@ -156,10 +153,6 @@ header .bottone a{
   background-color: grey;
   padding: 1px;
   border-radius: 20px;
-}
-
-main .container {
-  padding-top: 95px;
 }
 
 .playlist {
@@ -174,6 +167,10 @@ main .container {
 .playlist i {
   font-size: 40px;
   margin-right: 10px;
+}
+
+main .container {
+  padding-top: 95px;
 }
 
 .sezioni ul {
@@ -197,13 +194,11 @@ main .container {
 
 .row {
   margin-top: 25px;
-  margin-bottom: 35px;
   grid-gap: 3%;
 }
 
 .col {
   width: calc(calc(100%/6) - 3%);
-  height: 300px;
   margin-bottom: 20px;
 }
 
@@ -221,7 +216,7 @@ main .container {
   font-weight:900;
 }
 
-.col .text .subtitle {
+.subtitle{
   font-size: 10px;
   color: grey;
   font-weight:900;
@@ -244,11 +239,15 @@ footer .song {
   width: 200px;
   flex-shrink: 0;
   padding: 0 10px;
+  background-color: rgb(40, 40, 40);
+}
+
+footer .song img{
+  height: 35px;
 }
 
 footer .song .text{
-  width: 100%;
-  padding-left: 10px;
+  width: calc(100% - 95px);
 }
 
 footer .song .text span {
@@ -264,8 +263,8 @@ footer .song .text .artist-name {
   color: grey;
 }
 
-footer .song img{
-  height: 35px;
+footer .song .favourite {
+  width: 40px;
 }
 
 footer .song-control {
@@ -301,7 +300,7 @@ footer .general-control {
   width: 200px;
   flex-shrink: 0;
   padding: 10px;
-  font-size: 15px;
+  font-size: 12px;
 }
 
 .volume {
