@@ -16,7 +16,7 @@
   <title>Spotify</title>
 </head>
 <body>
-
+  <!--header fissato in alto-->
   <header class="wh-lateral-menu flex jus-flx-end align-c">
         
     <div class="bottone">
@@ -24,16 +24,20 @@
     </div>
 
   </header>
-
+  <!--/header fissato in alto-->
   
+  <!--menu laterale-->
   <div class="lateral-menu">
     <div class="container flex dir-col">
       
+      <!--logo-->
       <div class="logo flex align-c flex-shrink-zero">
         <img src="img/logo-small.svg" alt="Logo">
         <img src="img/logo.svg" alt="Logo Spotify">
       </div>
+      <!--/logo-->
 
+      <!--menu-->
       <div class="menu flex-shrink-zero">
         <ul>
           <li><img src="img/home.svg" alt="Home"> <span>Home</span></li>
@@ -41,7 +45,9 @@
           <li><img src="img/libreria.svg" alt="Libreria"><span>La tua libreria</span></li>
         </ul>
       </div>
+      <!--/menu-->
   
+      <!--playlist-->
       <div class="playlist">
         <span>Playlist</span>
         <div class=" new-playlist flex align-c">
@@ -58,8 +64,11 @@
           <li>Nome Playlist</li>
         </ul>
       </div>
+      <!--/playlist-->
   
+      <!--download app e profilo-->
       <div class="lateral-menu-bottom">
+        
         <div class="download">
           <img src="img/download.svg" alt="download">
           <span>Installa app</span>
@@ -69,15 +78,19 @@
           <img src="img/profile.svg" alt="Profile">
           <span>John Doe</span>
         </div>
+        
       </div>
+      <!--download app e profilo-->
 
     </div>
   </div>
+  <!--/menu laterale-->
 
   <main class="flex jus-flx-end">
 
     <div class="container">
       
+      <!--menu sezioni-->
       <div class="sezioni">
         <ul class="wrap flex jus-c">
           <li><a href="#">In evidenza</a></li>
@@ -88,8 +101,11 @@
           <li><a href="#">Scopri</a></li>
         </ul>
       </div>
+      <!--/menu sezioni-->
 
       <div class="content">
+        
+        <!--recentry played-->
         <section class="recently-played">
           
           <h2>Recently played</h2>
@@ -152,7 +168,9 @@
           </div>
 
         </section>
+        <!--/recentry played-->
 
+        <!--creato per-->
         <section class="custom-playlist">
           
           <h2>Creato per John Doe</h2>
@@ -180,7 +198,9 @@
           </div>
 
         </section>
+        <!--/creato per-->
 
+        <!--artisti più popolari-->
         <section class="popular-artists">
           
           <h2>Artisti più popolari</h2>
@@ -206,6 +226,7 @@
           </div>
 
         </section>
+        <!--/artisti più popolari-->
       </div>
 
     </div>
@@ -213,6 +234,8 @@
   </main>
 
   <footer class="flex jus-spc-btw">
+    
+    <!--canzone in riproduzione-->
     <div class="song flex align-c jus-spc-btw">
       <img src="img/player_left.jpg" alt="">
         <div class="text">
@@ -225,7 +248,9 @@
           <i class="fa-regular fa-folder"></i>
         </div>
     </div>
+    <!--/canzone in riproduzione-->
 
+    <!--controlli canzone-->
     <div class="song-control">
       <div class="start-stop flex jus-spc-btw align-c">
         <div>
@@ -263,7 +288,9 @@
         </div>
       </div>
     </div>
+    <!--/controlli canzone-->
 
+    <!--controlli volume e dispositivi-->
     <div class="general-control flex align-c jus-spc-btw">
       <div><i class="fa-solid fa-list-ul"></i></div>
 
@@ -271,11 +298,11 @@
 
       <div class="volume flex jus-spc-btw align-c">
         <i class="fa-solid fa-volume-high"></i>
-        <div class="volume-line">
-
-        </div>
+        <div class="volume-line"></div>
       </div>
     </div>
+    <!--/controlli volume e dispositivi-->
+
   </footer>
 </body>
 </html>

@@ -368,7 +368,7 @@ footer .general-control {
     display: none;
   }
 
-  .lateral-menu span {
+  .lateral-menu span, .lateral-menu .lateral-menu-bottom span {
     display: none;
   }
 
