@@ -63,6 +63,10 @@ footer {
   width: calc(100% - 200px);
 }
 
+.flex-shrink-zero {
+  flex-shrink: 0;
+}
+
 /***********************************************************************/
 .bottone {
   width: fit-content;
@@ -116,6 +120,10 @@ header .bottone a{
   display: none;
 }
 
+.lateral-menu .menu li img{
+  width: 20px;
+}
+
 .lateral-menu ul {
   list-style: none;
   margin-bottom: 25px;
@@ -125,12 +133,47 @@ header .bottone a{
   margin-bottom: 20px;
 }
 
+.lateral-menu-bottom {
+}
+
+
+.lateral-menu-bottom img {
+  width: 20px;
+}
+
+.lateral-menu-bottom .download {
+  border-bottom: 1px solid grey;
+  padding-bottom: 10px;
+}
+
+.lateral-menu-bottom .account {
+  margin-top: 10px;
+
+}
+
+.lateral-menu-bottom img[alt="Profile"] {
+  width: 20px;
+  background-color: grey;
+  padding: 1px;
+  border-radius: 20px;
+}
+
 main .container {
   padding-top: 95px;
 }
 
 .playlist {
   overflow: auto;
+  height: 100%;
+}
+
+.new-playlist {
+  margin: 10px auto;
+}
+
+.playlist i {
+  font-size: 40px;
+  margin-right: 10px;
 }
 
 .sezioni ul {
@@ -253,6 +296,18 @@ footer .general-control {
   }
 
   .lateral-menu .logo img[alt="Logo Spotify"] {
+    display: none;
+  }
+
+  .lateral-menu span {
+    display: none;
+  }
+
+  .lateral-menu-bottom .download {
+    border-bottom: none;
+  }
+
+  .lateral-menu .playlist {
     display: none;
   }
 }
