@@ -204,8 +204,36 @@ main .container {
 .col {
   width: calc(calc(100%/6) - 3%);
   height: 300px;
-  background-color: cyan;
   margin-bottom: 20px;
+}
+
+.col img {
+  width: 100%;
+}
+
+.col .text {
+  margin-top: 10px;
+  text-align: center;
+}
+
+.col .text .content-name {
+  font-size: 15px;
+  font-weight:900;
+}
+
+.col .text .subtitle {
+  font-size: 10px;
+  color: grey;
+  font-weight:900;
+}
+
+.col .text h3 {
+  font-size: 15px;
+  font-weight:900;
+}
+
+.popular-artists .col img{
+  border-radius: 100%;
 }
 
 footer > div {
@@ -214,8 +242,31 @@ footer > div {
 
 footer .song {
   width: 200px;
-  background-color: green;
   flex-shrink: 0;
+  padding: 0 10px;
+}
+
+
+footer .song .text{
+  width: 100%;
+  padding-left: 10px;
+}
+
+footer .song .text span {
+  display: block;
+}
+
+footer .song .text .song-name {
+  font-size: 10px;
+}
+
+footer .song .text .artist-name {
+  font-size: 9px;
+  color: grey;
+}
+
+footer .song img{
+  height: 35px;
 }
 
 footer .song-control {
@@ -252,7 +303,6 @@ footer .general-control {
   .col {
     width: calc(calc(100%/4) - 3%);
     height: 300px;
-    background-color: cyan;
     margin-bottom: 20px;
   }
 
@@ -262,7 +312,6 @@ footer .general-control {
   .col {
     width: calc(calc(100%/2) - 3%);
     height: 300px;
-    background-color: cyan;
     margin-bottom: 20px;
   }
 
