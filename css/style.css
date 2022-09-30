@@ -224,6 +224,10 @@ header .bottone:hover {
   cursor: pointer;
 }
 
+.lateral-menu-bottom .download:hover a span{
+  color: white;
+}
+
 .lateral-menu-bottom .account, .lateral-menu-bottom .download {
   height: 30px;
   display: flex;
