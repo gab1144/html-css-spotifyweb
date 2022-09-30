@@ -520,7 +520,7 @@ footer .general-control {
   cursor: pointer;
 }
 
-.corrent-volume-line:hover {
+.volume-line:hover .corrent-volume-line{
   background-color: var(--green);
 }
 
