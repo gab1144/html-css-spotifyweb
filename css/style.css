@@ -41,6 +41,21 @@ footer {
     UTILITIES
 ************************************************/
 
+.padding-left{
+  padding-left: 15px;
+}
+
+.dot {
+  height: 13px;
+  aspect-ratio: 1;
+  background-color: white;
+  border-radius: 100%;
+  position: absolute;
+  bottom: calc(50% - calc(13px/2));
+  left: 30%;
+  display: none;
+}
+
 /*----flex----*/
 .flex {
   display: flex;
@@ -151,6 +166,29 @@ header .bottone:hover {
   font-weight: 700;
 }
 
+.lateral-menu ul {
+  list-style: none;
+}
+
+.lateral-menu ul li {
+  margin-bottom: 20px;
+}
+
+/*--logo--*/
+.lateral-menu .logo {
+  height: 80px;
+}
+
+.lateral-menu .logo img {
+  height: 35px;
+}
+
+.lateral-menu .logo img[alt="Logo"] {
+  display: none;
+}
+/*--/logo--*/
+
+/*--menu--*/
 .lateral-menu .menu a {
   display: flex;
   align-items: center;
@@ -163,22 +201,6 @@ header .bottone:hover {
 
 .lateral-menu li:hover a {
   color: white;
-}
-
-.padding-left{
-  padding-left: 15px;
-}
-
-.lateral-menu .logo {
-  height: 80px;
-}
-
-.lateral-menu .logo img {
-  height: 35px;
-}
-
-.lateral-menu .logo img[alt="Logo"] {
-  display: none;
 }
 
 .lateral-menu .menu li img{
@@ -194,15 +216,39 @@ header .bottone:hover {
 .lateral-menu .menu li.selected a {
   color: white;
 }
+/*--/menu--*/
 
-.lateral-menu ul {
-  list-style: none;
+/*--/playlist*/
+.new-playlist {
+  margin: 10px auto;
 }
 
-.lateral-menu ul li {
-  margin-bottom: 20px;
+.new-playlist a{
+  font-size: 14px;
 }
 
+.new-playlist a :hover {
+  color: white;
+}
+
+.playlist i {
+  font-size: 40px;
+  margin-right: 10px;
+}
+
+.title {
+  color: white;
+  text-transform: uppercase;
+}
+
+.playlist ul {
+  height: 320px;
+  height: calc(100vh - 430px);
+  overflow: auto;
+}
+/*--/playlist--*/
+
+/*--bottom--*/
 .lateral-menu-bottom .download img {
   width: 15px;
   margin-right: 5px;
@@ -247,40 +293,14 @@ header .bottone:hover {
   padding-left: 2px;
   border-radius: 20px;
 }
-
-.new-playlist {
-  margin: 10px auto;
-}
-
-.new-playlist a{
-  font-size: 14px;
-}
-
-.new-playlist a :hover {
-  color: white;
-}
-
-.playlist i {
-  font-size: 40px;
-  margin-right: 10px;
-}
-
-.title {
-  color: white;
-  text-transform: uppercase;
-}
-
-.playlist ul {
-  height: 320px;
-  height: calc(100vh - 430px);
-  overflow: auto;
-}
+/*--/bottom--*/
 
 /*----main----*/
 main .container {
   padding-top: 95px;
 }
 
+/*--sezioni--*/
 .sezioni ul {
   list-style: none;
   display: flex;
@@ -314,7 +334,9 @@ main .container {
 .sezioni ul li:hover a{
   color: white;
 }
+/*--/sezioni--*/
 
+/*--righe--*/
 h2 {
   font-weight: 900;
 }
@@ -358,12 +380,15 @@ h2 {
   font-size: 15px;
   font-weight:900;
 }
+/*--/righe--*/
 
 .popular-artists .col img{
   border-radius: 100%;
 }
 
 /*----footer----*/
+
+/*--song--*/
 footer > div {
   height: 100%;
 }
@@ -419,7 +444,10 @@ footer .song-control {
 footer .song-control > div{
   height: 50%;
 }
+/*--/song--*/
 
+
+/*--start-stop--*/
 .start-stop {
   width: 180px;
   margin: 0 auto;
@@ -474,21 +502,12 @@ footer .song-control > div{
   background-color: var(--green);
 }
 
-.dot {
-  height: 13px;
-  aspect-ratio: 1;
-  background-color: white;
-  border-radius: 100%;
-  position: absolute;
-  bottom: calc(50% - calc(13px/2));
-  left: 30%;
-  display: none;
-}
-
 .time-line:hover .dot {
   display: block;
 }
+/*--/start-stop--*/
 
+/*--general control--*/
 footer .general-control {
   width: 200px;
   flex-shrink: 0;
@@ -531,7 +550,7 @@ footer .general-control {
 .volume-line:hover .dot {
   display: block;
 }
-
+/*--/general control--*/
 
 /**********************************************************
         RESPONSIVE
