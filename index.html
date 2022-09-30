@@ -7,7 +7,7 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet"> 
 
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
@@ -40,28 +40,29 @@
       <!--menu-->
       <div class="menu flex-shrink-zero">
         <ul>
-          <li><img src="img/home.svg" alt="Home"> <span>Home</span></li>
-          <li><img src="img/search.svg" alt="Search"> <span>Cerca</span></li>
-          <li><img src="img/libreria.svg" alt="Libreria"><span>La tua libreria</span></li>
+          <li class="selezionato"><a href="#"><img src="img/home.svg" alt="Home"> <span>Home</span></a></li>
+          <li><a href="#"><img src="img/search.svg" alt="Search"> <span>Cerca</span></a></li>
+          <li><a href="#"><img src="img/libreria.svg" alt="Libreria"><span>La tua libreria</span></li></a>
         </ul>
       </div>
       <!--/menu-->
   
       <!--playlist-->
       <div class="playlist">
-        <span>Playlist</span>
-        <div class=" new-playlist flex align-c">
-          <i class="fa-sharp fa-solid fa-square-plus"></i>
-          <span>Crea Playlist</span>
+        <span class="title">Playlist</span>
+        <div class=" new-playlist">
+          <a href="#">
+            <span class=" flex align-c"><i class="fa-sharp fa-solid fa-square-plus"></i> Crea Playlist</span>
+          </a>
         </div>
         <ul>
-          <li>Nome Playlist</li>
-          <li>Nome Playlist</li>
-          <li>Nome Playlist</li>
-          <li>Nome Playlist</li>
-          <li>Nome Playlist</li>
-          <li>Nome Playlist</li>
-          <li>Nome Playlist</li>
+          <li><a href="#">Nome Playlist</a></li>
+          <li><a href="#">Nome Playlist</a></li>
+          <li><a href="#">Nome Playlist</a></li>
+          <li><a href="#">Nome Playlist</a></li>
+          <li><a href="#">Nome Playlist</a></li>
+          <li><a href="#">Nome Playlist</a></li>
+          <li><a href="#">Nome Playlist</a></li>
         </ul>
       </div>
       <!--/playlist-->
@@ -78,7 +79,7 @@
           <img src="img/profile.svg" alt="Profile">
           <span>John Doe</span>
         </div>
-        
+
       </div>
       <!--download app e profilo-->
 
@@ -93,7 +94,7 @@
       <!--menu sezioni-->
       <div class="sezioni">
         <ul class="wrap flex jus-c">
-          <li><a href="#">In evidenza</a></li>
+          <li><a href="#">In evidenza</a> <div class="bordo-selezione"></div> </li>
           <li><a href="#">Podcast</a></li>
           <li><a href="#">Classifiche</a></li>
           <li><a href="#">Generi e mood</a></li>
@@ -114,54 +115,60 @@
 
             <div class="col">
               <img src="img/metal_lifting.jpg" alt="">
+              <div class="hover-img"><i class="fa-regular fa-circle-play"></i></div>
 
               <div class="text">
-                <h3 class="content-name">TITOLO</h3>
+                <h3 class="content-name">Heavy Metal</h3>
                 <span class="subtitle">Subtitle</span>
               </div>
             </div>
   
             <div class="col">
               <img src="img/stranger.jpeg" alt="">
+              <div class="hover-img"><i class="fa-regular fa-circle-play"></i></div>
 
               <div class="text">
-                <h3 class="content-name">TITOLO</h3>
-                <span class="subtitle">Subtitle</span>
+                <h3 class="content-name">Stranger Things, Vol.1 (a Netflix Original Series Soundtrack)</h3>
+                <span class="subtitle">Kyle Dixon & Michael Stein</span>
               </div>
             </div>
   
             <div class="col">
               <img src="img/aquietplace.jpeg" alt="">
-              
+              <div class="hover-img"><i class="fa-regular fa-circle-play"></i></div>
+
               <div class="text">
-                <h3 class="content-name">TITOLO</h3>
+                <h3 class="content-name">A quiet place</h3>
                 <span class="subtitle">Subtitle</span>
               </div>
             </div>
   
             <div class="col">
               <img src="img/split.jpeg" alt="">
-              
+              <div class="hover-img"><i class="fa-regular fa-circle-play"></i></div>
+
               <div class="text">
-                <h3 class="content-name">TITOLO</h3>
+                <h3 class="content-name">Split</h3>
                 <span class="subtitle">Subtitle</span>
               </div>
             </div>
   
             <div class="col">
               <img src="img/cure.jpeg" alt="">
-              
+              <div class="hover-img"><i class="fa-regular fa-circle-play"></i></div>
+
               <div class="text">
-                <h3 class="content-name">TITOLO</h3>
+                <h3 class="content-name">A cure for wellness</h3>
                 <span class="subtitle">Subtitle</span>
               </div>
             </div>
   
             <div class="col">
               <img src="img/sinister.jpeg" alt="">
+              <div class="hover-img"><i class="fa-regular fa-circle-play"></i></div>
 
               <div class="text">
-                <h3 class="content-name">TITOLO</h3>
+                <h3 class="content-name">sinister</h3>
                 <span class="subtitle">Subtitle</span>
               </div>
             </div>
@@ -180,17 +187,19 @@
 
             <div class="col">
               <img src="img/radar.jpeg" alt="">
+              <div class="hover-img"><i class="fa-regular fa-circle-play"></i></div>
 
               <div class="text">
-                <h3 class="content-name">TITOLO</h3>
+                <h3 class="content-name">Release Radar</h3>
               </div>
             </div>
   
             <div class="col">
               <img src="img/mixdaily.jpeg" alt="">
+              <div class="hover-img"><i class="fa-regular fa-circle-play"></i></div>
 
               <div class="text">
-                <h3 class="content-name">TITOLO</h3>
+                <h3 class="content-name">Daily Mix 1</h3>
               </div>
   
             </div>
@@ -211,7 +220,7 @@
               <img src="img/youg.jpeg" alt="">
 
               <div class="text">
-                <h3 class="content-name">TITOLO</h3>
+                <h3 class="content-name">Youg</h3>
               </div>
             </div>
   
@@ -219,7 +228,7 @@
               <img src="img/einaudi.jpeg" alt="">
 
               <div class="text">
-                <h3 class="content-name">TITOLO</h3>
+                <h3 class="content-name">Einaudi</h3>
               </div>
             </div>
   
@@ -240,7 +249,7 @@
       <img src="img/player_left.jpg" alt="">
         <div class="text">
           <span class="song-name">Hilltop Hoods</span>
-          <span class="artist-name">Brano Nome</span>
+          <a href="#" class="artist-name">Brano Nome</a>
         </div>
 
         <div class="favourite">
@@ -261,7 +270,7 @@
           <i class="fa-solid fa-backward-step"></i>
         </div>
 
-        <div>
+        <div class="play">
           <i class="fa-regular fa-circle-play"></i>
         </div>
 
@@ -280,7 +289,9 @@
         </div>
 
         <div class="time-line">
-
+          <div class="time-line-current">
+          </div>
+          <div class="time-line-current-dot"></div>
         </div>
 
         <div class="full-lenth">
@@ -298,7 +309,9 @@
 
       <div class="volume flex jus-spc-btw align-c">
         <i class="fa-solid fa-volume-high"></i>
-        <div class="volume-line"></div>
+        <div class="volume-line">
+          <div class="corrent-volume-line"></div>
+        </div>
       </div>
     </div>
     <!--/controlli volume e dispositivi-->

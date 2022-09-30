@@ -16,7 +16,7 @@ header {
   position: fixed;
   right: 0;
   top: 0;
-  padding-right: 5px;
+  padding-right: 25px;
   background-color: rgba(0, 0, 0, 0.548);
   z-index: 999;
 }
@@ -87,10 +87,6 @@ footer {
   color: white;
   text-decoration: none;
 }
-
-.bottone a:hover {
-  text-decoration: underline;
-}
 /*----/bottone link----*/
 
 .container {
@@ -128,12 +124,34 @@ header .bottone a{
   font-size: 12px;
 }
 
+header .bottone:hover {
+  transform: scale(1.2);
+}
+
 /*----lateral menu----*/
 .lateral-menu {
   width: 200px;
   height: calc(100vh - 80px);
   background-color: black;
   float: left;
+  color: rgb(109, 109, 109);
+}
+
+.lateral-menu a {
+  color: rgb(109, 109, 109);
+  text-decoration: none;
+}
+
+.lateral-menu li:hover a {
+  color: white;
+}
+
+.lateral-menu .container {
+  padding-left: 0;
+}
+
+.lateral-menu .container > div:not(.menu){
+  padding-left: 15px;
 }
 
 .lateral-menu .logo {
@@ -150,6 +168,11 @@ header .bottone a{
 
 .lateral-menu .menu li img{
   width: 20px;
+  margin-left: 15px;
+}
+
+.lateral-menu .menu li.selezionato {
+  border-left: 2px solid rgb(187, 255, 51);
 }
 
 .lateral-menu ul {
@@ -195,9 +218,18 @@ header .bottone a{
   margin: 10px auto;
 }
 
+.new-playlist a :hover {
+  color: white;
+}
+
 .playlist i {
   font-size: 40px;
   margin-right: 10px;
+}
+
+.title {
+  color: white;
+  text-transform: uppercase;
 }
 
 /*----main----*/
@@ -214,14 +246,33 @@ main .container {
   margin-right: 15px;
   flex-shrink: 0;
   margin-bottom: 30px;
+  position: relative;
+  padding-bottom: 5px;
 }
 
 .sezioni ul li a {
   font-size: 13px;
-  color: white;
+  color: rgb(130, 132, 136);
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
+}
+
+.bordo-selezione {
+  width: 25px;
+  height: 2px;
+  background-color: rgb(203, 255, 49);
+  position: absolute;
+  bottom: 0;
+  left: calc(50% - calc(25px/2));
+}
+
+.sezioni ul li:hover a{
+  color: white;
+}
+
+h2 {
+  font-weight: 900;
 }
 
 .col .text .content-name {
@@ -233,6 +284,30 @@ main .container {
   font-size: 10px;
   color: grey;
   font-weight:900;
+}
+
+.col {
+  position: relative;
+}
+
+.col .hover-img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  aspect-ratio: 1;
+  background-color: rgba(0, 0, 0, 0.616);
+  text-align: center;
+  display: none;
+}
+
+.col .hover-img i {
+  font-size: 50px;
+  margin-top: calc(50% - calc(50px/2));
+}
+
+.col:hover .hover-img {
+  display: block;
 }
 
 .col .text h3 {
@@ -275,6 +350,12 @@ footer .song .text .song-name {
 footer .song .text .artist-name {
   font-size: 9px;
   color: grey;
+  text-decoration: none;
+}
+
+footer .song .text .artist-name:hover {
+  text-decoration: underline;
+  color: white;
 }
 
 footer .song .favourite {
@@ -294,6 +375,18 @@ footer .song-control > div{
   margin: 0 auto;
 }
 
+.start-stop div {
+  cursor: pointer;
+}
+
+.fa-circle-play {
+  font-size: 1.7rem;
+}
+
+.play:hover .fa-circle-play {
+  transform: scale(1.1);
+}
+
 .bar {
   width: 100%;
 }
@@ -303,11 +396,46 @@ footer .song-control > div{
   padding: 5%;
 }
 
-.time-line{
+.time-line {
+  position: relative;
+}
+
+.time-line, .time-line-current {
   height: 4px;
   width: 90%;
   border-radius: 2px;
+  background-color: rgb(93, 93, 93);
+}
+
+.time-line-current {
+  position: absolute;
+  left: 0;
+  top: 0;
   background-color: white;
+  width: 30%;
+}
+
+.time-line:hover {
+  cursor: pointer;
+}
+
+.time-line:hover .time-line-current{
+  background-color: rgb(203, 255, 49);
+}
+
+.time-line-current-dot {
+  height: 13px;
+  aspect-ratio: 1;
+  background-color: white;
+  border-radius: 100%;
+  position: absolute;
+  bottom: calc(50% - calc(13px/2));
+  left: 30%;
+  display: none;
+}
+
+.time-line:hover .time-line-current-dot {
+  display: block;
 }
 
 footer .general-control {
@@ -321,14 +449,25 @@ footer .general-control {
   width: 70%;
 }
 
-.volume-line{
+.volume-line {
+  position: relative;
+  background-color: rgb(91, 91, 91);
   margin-left: 5px;
+}
+
+.volume-line, .corrent-volume-line{
   height: 4px;
   width: 80%;
   border-radius: 2px;
-  background-color: white;
 }
 
+.corrent-volume-line {
+  background-color: white;
+  width: 30%;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
 
 /**********************************************************
         RESPONSIVE
@@ -365,8 +504,19 @@ footer .general-control {
   }
 
   .lateral-menu .container{
-    padding-left: 6px;
     padding-right: 6px;
+  }
+
+  .lateral-menu .container > div:not(.menu){
+    padding-left: 6px;
+  }
+  
+  .lateral-menu .menu li img{
+    margin-left: 6px;
+  }
+
+  .lateral-menu .menu li.selezionato {
+    border-left: none;
   }
 
   .wh-lateral-menu {
