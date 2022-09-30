@@ -356,6 +356,10 @@ h2 {
   position: relative;
 }
 
+.col:hover {
+  cursor: pointer;
+}
+
 .col .hover-img {
   position: absolute;
   top: 0;
