@@ -2,6 +2,8 @@
   --text-grey: rgb(109, 109, 109);;
   --footer-grey: rgb(40, 40, 40);
   --green: rgb(187, 255, 51);
+  --current-time: 30%;
+  --current-volume: 30%;
 }
 
 * {
@@ -477,6 +479,7 @@ footer .song-control > div{
   font-size: 10px;
   padding-left: 5%;
   padding-right: 5%;
+  font-weight: 800;
 }
 
 .time-line {
@@ -495,7 +498,7 @@ footer .song-control > div{
   left: 0;
   top: 0;
   background-color: white;
-  width: 30%;
+  width: var(--current-time);
 }
 
 .time-line:hover {
@@ -504,6 +507,10 @@ footer .song-control > div{
 
 .time-line:hover .time-line-current{
   background-color: var(--green);
+}
+
+.time-line .dot {
+  left: var(--current-time);
 }
 
 .time-line:hover .dot {
@@ -516,6 +523,7 @@ footer .general-control {
   width: 200px;
   flex-shrink: 0;
   padding: 10px;
+  padding-right: 20px;
   font-size: 12px;
 }
 
@@ -537,7 +545,7 @@ footer .general-control {
 
 .corrent-volume-line {
   background-color: white;
-  width: 30%;
+  width: var(--current-volume);
   position: absolute;
   left: 0;
   top: 0;
@@ -549,6 +557,10 @@ footer .general-control {
 
 .volume-line:hover .corrent-volume-line{
   background-color: var(--green);
+}
+
+.volume-line .dot {
+  left: var(--current-volume);
 }
 
 .volume-line:hover .dot {
