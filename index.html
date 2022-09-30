@@ -32,6 +32,7 @@
   <div class="lateral-menu">
     <div class="container">
     <div>
+
       <!--logo-->
       <div class="logo padding-left flex align-c flex-shrink-zero">
         <img src="img/logo-small.svg" alt="Logo">
@@ -42,7 +43,7 @@
       <!--menu-->
       <div class="menu flex-shrink-zero">
         <ul>
-          <li class="selezionato"><a href="#"><img src="img/home.svg" alt="Home"> <span>Home</span></a></li>
+          <li class="selected"><a href="#"><img src="img/home.svg" alt="Home"> <span>Home</span></a></li>
           <li><a href="#"><img src="img/search.svg" alt="Search"> <span>Cerca</span></a></li>
           <li><a href="#"><img src="img/libreria.svg" alt="Libreria"><span>La tua libreria</span></li></a>
         </ul>
@@ -73,8 +74,10 @@
       <div class="lateral-menu-bottom padding-left">
         
         <div class="download">
-          <img src="img/download.svg" alt="download">
-          <span>Installa app</span>
+          <a href="#" class="flex align-c">
+            <img src="img/download.svg" alt="download">
+            <span>Installa app</span>
+          </a>
         </div>
 
         <div class="account">
@@ -215,7 +218,8 @@
         <section class="popular-artists">
           
           <h2>Artisti più popolari</h2>
-            
+          <span class="subtitle">Più ascolti, più accurati saranno i tuoi suggerimenti</span>
+          
           <div class="row flex wrap">
 
             <div class="col">

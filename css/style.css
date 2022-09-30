@@ -147,6 +147,18 @@ header .bottone:hover {
 .lateral-menu a {
   color: var(--text-grey);
   text-decoration: none;
+  font-size: 13px;
+  font-weight: 700;
+}
+
+.lateral-menu .menu a {
+  display: flex;
+  align-items: center;
+}
+
+.lateral-menu .menu a span{
+  padding-left: 10px;
+  display: block;
 }
 
 .lateral-menu li:hover a {
@@ -174,8 +186,13 @@ header .bottone:hover {
   margin-left: 15px;
 }
 
-.lateral-menu .menu li.selezionato {
+.lateral-menu .menu li.selected {
   border-left: 2px solid var(--green);
+  color: white;
+}
+
+.lateral-menu .menu li.selected a {
+  color: white;
 }
 
 .lateral-menu ul {
@@ -186,13 +203,21 @@ header .bottone:hover {
   margin-bottom: 20px;
 }
 
-.lateral-menu-bottom img {
-  width: 20px;
+.lateral-menu-bottom .download img {
+  width: 15px;
   margin-right: 5px;
 }
 
 .lateral-menu-bottom .download {
   border-bottom: 1px solid var(--text-grey);
+  padding-bottom: 5px;
+}
+
+.lateral-menu-bottom .account {
+  padding-top: 7.5px;
+  font-size: 13px;
+  font-weight: 900;
+  color: white;
 }
 
 .lateral-menu-bottom .download:hover {
@@ -210,17 +235,21 @@ header .bottone:hover {
 }
 
 .lateral-menu-bottom img[alt="Profile"] {
-  width: 20px;
+  margin-right: 5px;
+  width: 23px;
   background-color: var(--text-grey);;
   padding: 1px;
+  padding-right: 2px;
+  padding-left: 2px;
   border-radius: 20px;
-}
-
-.playlist {
 }
 
 .new-playlist {
   margin: 10px auto;
+}
+
+.new-playlist a{
+  font-size: 14px;
 }
 
 .new-playlist a :hover {
@@ -239,7 +268,7 @@ header .bottone:hover {
 
 .playlist ul {
   height: 320px;
-  height: calc(100vh - 435px);
+  height: calc(100vh - 430px);
   overflow: auto;
 }
 
@@ -294,7 +323,7 @@ h2 {
 .subtitle{
   font-size: 10px;
   color: var(--text-grey);
-  font-weight:900;
+  font-weight:700;
 }
 
 .col {
@@ -562,7 +591,7 @@ footer .general-control {
     display: none;
   }
 
-  .lateral-menu span, .lateral-menu .lateral-menu-bottom span {
+  .lateral-menu span, .lateral-menu .lateral-menu-bottom span, .lateral-menu .menu a span{
     display: none;
   }
 
@@ -572,5 +601,16 @@ footer .general-control {
 
   .lateral-menu .playlist {
     display: none;
+  }
+
+  .lateral-menu .menu {
+    height: calc(100vh - 230px);
+  }
+
+  .lateral-menu .download img{
+    margin-left: 5px;
+  }
+  .lateral-menu-bottom img[alt="Profile"] {
+    margin-left: 2.5px;
   }
 }
