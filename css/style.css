@@ -1,3 +1,9 @@
+:root {
+  --text-grey: rgb(109, 109, 109);;
+  --footer-grey: rgb(40, 40, 40);
+  --green: rgb(187, 255, 51);
+}
+
 * {
   padding: 0;
   margin: 0;
@@ -27,7 +33,7 @@ main {
 }
 
 footer {
-  background-color: rgb(40, 40, 40);
+  background-color: var(--footer-grey);
   height: 80px;
 }
 
@@ -130,7 +136,7 @@ header .bottone:hover {
   height: calc(100vh - 80px);
   background-color: black;
   float: left;
-  color: rgb(109, 109, 109);
+  color: var(--text-grey);
 }
 
 .lateral-menu .container {
@@ -139,7 +145,7 @@ header .bottone:hover {
 }
 
 .lateral-menu a {
-  color: rgb(109, 109, 109);
+  color: var(--text-grey);
   text-decoration: none;
 }
 
@@ -169,7 +175,7 @@ header .bottone:hover {
 }
 
 .lateral-menu .menu li.selezionato {
-  border-left: 2px solid rgb(187, 255, 51);
+  border-left: 2px solid var(--green);
 }
 
 .lateral-menu ul {
@@ -186,7 +192,7 @@ header .bottone:hover {
 }
 
 .lateral-menu-bottom .download {
-  border-bottom: 1px solid grey;
+  border-bottom: 1px solid var(--text-grey);
 }
 
 .lateral-menu-bottom .download:hover {
@@ -205,7 +211,7 @@ header .bottone:hover {
 
 .lateral-menu-bottom img[alt="Profile"] {
   width: 20px;
-  background-color: grey;
+  background-color: var(--text-grey);;
   padding: 1px;
   border-radius: 20px;
 }
@@ -257,7 +263,7 @@ main .container {
 
 .sezioni ul li a {
   font-size: 13px;
-  color: rgb(130, 132, 136);
+  color: var(--text-grey);
   text-decoration: none;
   text-transform: uppercase;
   font-weight: 600;
@@ -266,7 +272,7 @@ main .container {
 .bordo-selezione {
   width: 25px;
   height: 2px;
-  background-color: rgb(203, 255, 49);
+  background-color: var(--green);
   position: absolute;
   bottom: 0;
   left: calc(50% - calc(25px/2));
@@ -287,7 +293,7 @@ h2 {
 
 .subtitle{
   font-size: 10px;
-  color: grey;
+  color: var(--text-grey);
   font-weight:900;
 }
 
@@ -333,7 +339,7 @@ footer .song {
   width: 200px;
   flex-shrink: 0;
   padding: 0 10px;
-  background-color: rgb(40, 40, 40);
+  background-color: var(--footer-grey);
 }
 
 footer .song img{
@@ -354,7 +360,7 @@ footer .song .text .song-name {
 
 footer .song .text .artist-name {
   font-size: 9px;
-  color: grey;
+  color: var(--text-grey);
   text-decoration: none;
 }
 
@@ -365,7 +371,7 @@ footer .song .text .artist-name:hover {
 
 footer .song .favourite {
   width: 40px;
-  color: rgb(101, 101, 101);
+  color: var(--text-grey);
 }
 
 .like:hover, .saved:hover {
@@ -416,7 +422,7 @@ footer .song-control > div{
   height: 4px;
   width: 90%;
   border-radius: 2px;
-  background-color: rgb(93, 93, 93);
+  background-color: var(--text-grey);
 }
 
 .time-line-current {
@@ -432,7 +438,7 @@ footer .song-control > div{
 }
 
 .time-line:hover .time-line-current{
-  background-color: rgb(203, 255, 49);
+  background-color: var(--green);
 }
 
 .dot {
@@ -463,7 +469,7 @@ footer .general-control {
 
 .volume-line {
   position: relative;
-  background-color: rgb(91, 91, 91);
+  background-color: var(--text-grey);
   margin-left: 5px;
 }
 
@@ -486,7 +492,7 @@ footer .general-control {
 }
 
 .corrent-volume-line:hover {
-  background-color: rgb(203, 255, 49);
+  background-color: var(--green);
 }
 
 .volume-line:hover .dot {
@@ -520,7 +526,6 @@ footer .general-control {
   footer .general-control {
     width: 150px;
   }
-
 }
 
 @media screen and (max-width: 480px) {
