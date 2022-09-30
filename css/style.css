@@ -8,7 +8,6 @@ body {
   font-family: 'Montserrat', sans-serif;
   color: white;
   background-color: rgb(20, 25, 34);
-  overflow: hidden;
 }
 
 header {
@@ -137,6 +136,10 @@ header .bottone:hover {
   color: rgb(109, 109, 109);
 }
 
+.lateral-menu .container {
+  padding-left: 0;
+}
+
 .lateral-menu a {
   color: rgb(109, 109, 109);
   text-decoration: none;
@@ -144,10 +147,6 @@ header .bottone:hover {
 
 .lateral-menu li:hover a {
   color: white;
-}
-
-.lateral-menu .container {
-  padding-left: 0;
 }
 
 .lateral-menu .container > div:not(.menu){
@@ -192,6 +191,10 @@ header .bottone:hover {
   border-bottom: 1px solid grey;
 }
 
+.lateral-menu-bottom .download:hover {
+  cursor: pointer;
+}
+
 .lateral-menu-bottom .account, .lateral-menu-bottom .download {
   height: 30px;
   display: flex;
@@ -210,8 +213,7 @@ header .bottone:hover {
 }
 
 .playlist {
-  overflow: auto;
-  height: 100%;
+  height: calc(100% - 320px);
 }
 
 .new-playlist {
@@ -230,6 +232,11 @@ header .bottone:hover {
 .title {
   color: white;
   text-transform: uppercase;
+}
+
+.playlist ul {
+  height: 320px;
+  overflow: scroll;
 }
 
 /*----main----*/
@@ -360,6 +367,12 @@ footer .song .text .artist-name:hover {
 
 footer .song .favourite {
   width: 40px;
+  color: rgb(101, 101, 101);
+}
+
+.like:hover, .saved:hover {
+  color: white;
+  cursor: pointer;
 }
 
 footer .song-control {
@@ -393,7 +406,8 @@ footer .song-control > div{
 
 .current-time, .full-lenth {
   font-size: 10px;
-  padding: 5%;
+  padding-left: 5%;
+  padding-right: 5%;
 }
 
 .time-line {
@@ -423,7 +437,7 @@ footer .song-control > div{
   background-color: rgb(203, 255, 49);
 }
 
-.time-line-current-dot {
+.dot {
   height: 13px;
   aspect-ratio: 1;
   background-color: white;
@@ -434,7 +448,7 @@ footer .song-control > div{
   display: none;
 }
 
-.time-line:hover .time-line-current-dot {
+.time-line:hover .dot {
   display: block;
 }
 
@@ -468,6 +482,19 @@ footer .general-control {
   left: 0;
   top: 0;
 }
+
+.volume-line:hover, .list:hover, .devices:hover, .volume:hover {
+  cursor: pointer;
+}
+
+.corrent-volume-line:hover {
+  background-color: rgb(203, 255, 49);
+}
+
+.volume-line:hover .dot {
+  display: block;
+}
+
 
 /**********************************************************
         RESPONSIVE

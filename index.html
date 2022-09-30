@@ -28,8 +28,8 @@
   
   <!--menu laterale-->
   <div class="lateral-menu">
-    <div class="container flex dir-col">
-      
+    <div class="container flex dir-col jus-spc-btw">
+    <div>
       <!--logo-->
       <div class="logo flex align-c flex-shrink-zero">
         <img src="img/logo-small.svg" alt="Logo">
@@ -66,7 +66,7 @@
         </ul>
       </div>
       <!--/playlist-->
-  
+    </div>  
       <!--download app e profilo-->
       <div class="lateral-menu-bottom">
         
@@ -252,9 +252,16 @@
           <a href="#" class="artist-name">Brano Nome</a>
         </div>
 
-        <div class="favourite">
-          <i class="fa-regular fa-heart"></i>
-          <i class="fa-regular fa-folder"></i>
+        <div class="favourite flex jus-spc-btw">
+          
+          <div class="like">
+            <i class="fa-regular fa-heart"></i>
+          </div>
+          
+          <div class="saved">
+            <i class="fa-regular fa-folder"></i>
+          </div>
+
         </div>
     </div>
     <!--/canzone in riproduzione-->
@@ -291,7 +298,7 @@
         <div class="time-line">
           <div class="time-line-current">
           </div>
-          <div class="time-line-current-dot"></div>
+          <div class="dot"></div>
         </div>
 
         <div class="full-lenth">
@@ -303,14 +310,15 @@
 
     <!--controlli volume e dispositivi-->
     <div class="general-control flex align-c jus-spc-btw">
-      <div><i class="fa-solid fa-list-ul"></i></div>
+      <div class="list"><i class="fa-solid fa-list-ul"></i></div>
 
-      <div><i class="fa-solid fa-desktop"></i></div>
+      <div class="devices"><i class="fa-solid fa-desktop"></i></div>
 
       <div class="volume flex jus-spc-btw align-c">
         <i class="fa-solid fa-volume-high"></i>
         <div class="volume-line">
           <div class="corrent-volume-line"></div>
+          <div class="dot"></div>
         </div>
       </div>
     </div>
