@@ -18,6 +18,7 @@ header {
   padding-right: 25px;
   background-color: rgba(0, 0, 0, 0.548);
   z-index: 999;
+  width: calc(100% - 200px);
 }
 
 main {
@@ -67,10 +68,6 @@ footer {
   flex-shrink: 0;
 }
 /*----/flex----*/
-
-.wh-lateral-menu {
-  width: calc(100% - 200px);
-}
 
 /*----bottone link----*/
 .bottone {
@@ -138,6 +135,7 @@ header .bottone:hover {
 
 .lateral-menu .container {
   padding-left: 0;
+  height: calc(100vh - 80px);
 }
 
 .lateral-menu a {
@@ -149,7 +147,7 @@ header .bottone:hover {
   color: white;
 }
 
-.lateral-menu .container > div:not(.menu){
+.padding-left{
   padding-left: 15px;
 }
 
@@ -213,7 +211,6 @@ header .bottone:hover {
 }
 
 .playlist {
-  height: calc(100% - 320px);
 }
 
 .new-playlist {
@@ -236,7 +233,8 @@ header .bottone:hover {
 
 .playlist ul {
   height: 320px;
-  overflow: scroll;
+  height: calc(100vh - 435px);
+  overflow: auto;
 }
 
 /*----main----*/
@@ -526,6 +524,10 @@ footer .general-control {
 }
 
 @media screen and (max-width: 480px) {
+  header {
+    width: calc(100% - 40px);
+  }
+  
   .lateral-menu {
     width: 40px;
   }
@@ -534,7 +536,7 @@ footer .general-control {
     padding-right: 6px;
   }
 
-  .lateral-menu .container > div:not(.menu){
+  .padding-left{
     padding-left: 6px;
   }
   
@@ -544,10 +546,6 @@ footer .general-control {
 
   .lateral-menu .menu li.selezionato {
     border-left: none;
-  }
-
-  .wh-lateral-menu {
-    width: calc(100% - 40px);
   }
 
   .lateral-menu .logo img[alt="Logo"] {
